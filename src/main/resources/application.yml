@@ -1,0 +1,39 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: cc-service
+  config:
+    import:
+      - optional:nacos:cc-service.yaml
+      - optional:nacos:cc-service
+  cloud:
+    nacos:
+      context-path: /nacos
+      discovery:
+        server-addr: 192.168.56.101:8848
+        username: nacos
+        password: nacos
+        timeout: 5000
+        fail-fast: false
+        max-retry: 3
+        retry-time: 2000
+        group: DEFAULT_GROUP
+      config:
+        server-addr: 192.168.56.101:8848
+        username: nacos
+        password: nacos
+        file-extension: yaml
+        group: DEFAULT_GROUP
+        timeout: 5000
+        fail-fast: false
+        max-retry: 3
+        retry-time: 2000
+        refresh-enabled: true
+
+logging:
+  level:
+    com.alibaba.nacos: DEBUG
+    com.alibaba.cloud: DEBUG
+    org.springframework: INFO

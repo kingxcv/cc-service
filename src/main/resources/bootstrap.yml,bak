@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: cc-service
+  cloud:
+    nacos:
+      context-path: /nacos
+      discovery:
+        server-addr: 192.168.56.101:8848
+        username: nacos
+        password: nacos
+        # 不要配置 namespace，使用默认的 public 命名空间
+        timeout: 5000
+        fail-fast: false
+        max-retry: 3
+        retry-time: 2000
+      config:
+        server-addr: 192.168.56.101:8848
+        username: nacos
+        password: nacos
+        file-extension: yaml
+        group: DEFAULT_GROUP
+        timeout: 5000
+        fail-fast: false
+        max-retry: 3
+        retry-time: 2000
+        refresh-enabled: true
