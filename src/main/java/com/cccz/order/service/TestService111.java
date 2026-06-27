@@ -1,4 +1,4 @@
 package com.cccz.order.service;
 
-public interface TestService {
+public interface TestService111 {
 }
