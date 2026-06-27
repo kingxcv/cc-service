@@ -40,7 +40,7 @@ com.cccz
 │   ├── controller/           # 通用接口
 │   ├── dto/                  # 数据传输对象（中转）
 │   ├── entity/               # 数据库实体（对应表）
-│   ├── enum/                 # 枚举类
+│   ├── enums/                # 枚举类
 │   ├── service/              # 业务接口
 │   │   └── impl/             # 业务实现
 │   └── vo/                   # 视图对象（入参/出参）
@@ -51,7 +51,7 @@ com.cccz
 │   ├── dao/                  # Mapper 接口（数据访问层）
 │   ├── dto/                  # DTO 中转类
 │   ├── entity/               # 实体类（对应 t_order 等表）
-│   ├── enum/                 # 订单相关枚举
+│   ├── enums/                # 订单相关枚举
 │   ├── service/              # 业务接口
 │   │   └── impl/             # 业务实现
 │   └── vo/                   # 视图对象

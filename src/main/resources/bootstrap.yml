@@ -5,7 +5,7 @@ spring:
     nacos:
       context-path: /nacos
       discovery:
-        server-addr: 192.168.56.101:8848
+        server-addr: 192.168.235.101:8848
         username: nacos
         password: nacos
         # 不要配置 namespace，使用默认的 public 命名空间
@@ -14,7 +14,7 @@ spring:
         max-retry: 3
         retry-time: 2000
       config:
-        server-addr: 192.168.56.101:8848
+        server-addr: 192.168.235.101:8848
         username: nacos
         password: nacos
         file-extension: yaml
